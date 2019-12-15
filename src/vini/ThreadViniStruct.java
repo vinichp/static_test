@@ -38,6 +38,10 @@ public class ThreadViniStruct implements Runnable {
 		metodoPrint(vs);
 		
 	}
+	
+	public void setNome(String nome) {
+		this.vs.nome = nome;
+	}
 
 	
 }

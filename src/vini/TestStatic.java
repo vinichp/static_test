@@ -32,5 +32,8 @@ public static void main(String[] args) throws InterruptedException {
 	es2.submit(t5);
 	es2.submit(t6);
 	
+	t4.setNome("MUDOUUU4");
+	t5.setNome("MUDOUUU5");
+	t6.setNome("MUDOUUU6");
 }
 }
