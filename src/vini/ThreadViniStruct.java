@@ -3,6 +3,8 @@ package vini;
 public class ThreadViniStruct implements Runnable {
 	
 	ViniStruct vs;
+	
+	static String staticString = "AAAA";
 
 	public ThreadViniStruct(String name, String conexao){
 		this.vs = new ViniStruct(name, conexao);
@@ -12,11 +14,18 @@ public class ThreadViniStruct implements Runnable {
 	
 		try {
 			
-			System.out.print("\nExecutando Thread " + vs);			
+			System.out.print("\nExecutando Thread " + vs);	
+			System.out.println("\n\n ======" +  staticString);
+			staticString = vs.nome;
 			Thread.sleep(1000);
 			System.out.print("\nExecutando Thread " + vs);
+			System.out.println(staticString);
 			Thread.sleep(1000);
 			System.out.print("\nExecutando Thread " + vs);
+			System.out.println(staticString);
+			System.out.println("\n\n ======" +  staticString);
+			
+			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

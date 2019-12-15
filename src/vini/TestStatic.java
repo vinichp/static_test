@@ -20,7 +20,7 @@ public static void main(String[] args) throws InterruptedException {
 	
 	Thread.sleep(7000);
 	
-	System.out.println("PARTE 2 ---------------------");
+	System.out.println("\n\nPARTE 2 ---------------------\n\n");
 	
 	ThreadViniStruct t4 = new ThreadViniStruct("Vinicius", "ConexVini");
 	ThreadViniStruct t5 = new ThreadViniStruct("Janine", "ConexJan");
